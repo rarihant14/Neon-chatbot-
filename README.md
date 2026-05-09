@@ -10,7 +10,6 @@
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
 - [Quick Start](#quick-start)
-- [Environment Variables](#environment-variables)
 - [Available Models](#available-models)
 - [Agent Tools](#agent-tools)
 - [Agent Modes](#agent-modes)
@@ -157,24 +156,7 @@ The browser opens automatically at `http://127.0.0.1:5000`.
 
 ---
 
-## Environment Variables
 
-| Variable              | Required | Description                                              |
-|-----------------------|----------|----------------------------------------------------------|
-| `GROQ_API_KEY`        | ✅ Yes   | Fast inference (LLaMA, Qwen, GPT-OSS). Free at [console.groq.com](https://console.groq.com) |
-| `GEMINI_API_KEY`      | Optional | Gemini models + Pinecone embeddings. Free at [aistudio.google.com](https://aistudio.google.com) |
-| `OPENAI_API_KEY`      | Optional | GPT-4o, o3-mini. Paid. [platform.openai.com](https://platform.openai.com) |
-| `OPENROUTER_API_KEY`  | Optional | Free-tier models (Nemotron, Laguna). [openrouter.ai](https://openrouter.ai) |
-| `TAVILY_API_KEY`      | Optional | Web search tool. Free tier available at [tavily.com](https://tavily.com) |
-| `PINECONE_API_KEY`    | Optional | Long-term memory. Free tier at [pinecone.io](https://pinecone.io) |
-| `PINECONE_INDEX_NAME` | Optional | Defaults to `neuroagent-memory` |
-| `SARVAM_API_KEY`      | Optional | Indian language TTS/STT/translate. [dashboard.sarvam.ai](https://dashboard.sarvam.ai) |
-| `FLASK_SECRET_KEY`    | Optional | Change in production. Defaults to `change-me-in-production` |
-| `APP_HOST`            | Optional | Defaults to `127.0.0.1` |
-| `APP_PORT`            | Optional | Defaults to `5000` |
-| `DEBUG`               | Optional | Defaults to `True` |
-
-> **Security note:** Never commit a filled-in `.env` to version control. The `.gitignore` already excludes it.
 
 ---
 
@@ -423,4 +405,4 @@ The unit tests cover:
 
 ---
 
-> Built with ❤️ — combining fast LLMs, semantic memory, real-time search, voice, and Indian language AI into one extensible assistant.
+> — combining fast LLMs, semantic memory, real-time search, voice, and Indian language AI into one extensible assistant.
