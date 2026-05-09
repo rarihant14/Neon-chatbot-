@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets / runtime state
+.env
+.env.local
+gmail_credentials.json
+gmail_token.json
+backend/db/*.db
+.flask_sessions/
